@@ -18,6 +18,7 @@
 # the Free Software Foundation, Inc., 51 Franklin Street,
 # Boston, MA 02110-1301, USA.
 #
+import random
 
 def merge(ListA, ListB):
     N = len(ListA) + len(ListB)
@@ -50,6 +51,9 @@ def merge_sort(List):
         return merge(ListA, ListB)
 
 
-a = [1, 3, 9, 18, 7, 2, 8, 6, 9, 10, 3, 2, 1, 10, 21]
+N = 30
+a = []
+for i in range(N):
+    a.append(random.randint(0, 99))
 print a
 print merge_sort(a)
