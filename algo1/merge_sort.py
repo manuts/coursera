@@ -50,7 +50,6 @@ def merge_sort(List):
         ListB = merge_sort(List[len(List)/2:])
         return merge(ListA, ListB)
 
-
 N = 30
 a = []
 for i in range(N):
